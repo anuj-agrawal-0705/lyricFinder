@@ -8,10 +8,13 @@ script:
 - npm test
 - npm run build
 deploy:
+
   provider: heroku
   api_key:
     secure: Sm9sRdTql87mpfHc+T4MMWnZpV+jgmUt6zTaDV27XZKxbNZMJFoSm724EOix66YrzZqjBLUvAe+kfYtGT97zWcWLiTrmBlm187oBsRhR+1gfcuS94g7iiVcSA+CmrvqsgIhA9GmiT2IuY7hjCbIN/f5et6aeBLPHqedUQbkok96l0674ZOEr8RlHnYxeDYZB3uGNgaUHAiZmlG9vOmkaDEspjF0+lAC2wWcxiXaclpCT2G1wRelIBudlRNAMVAQYrrQrknoC1XsBQtYdeu/YhJ0H5zkXaRXeZllzKfgJzeeMi1Cy66ueA00glc+PLCyyAya1S84yGovn/0nP43DrbrJbvuHNoEqW6toiutPkXUKuAVGoJa0H894q35hEcVAtzdJasj3W7OzSi+YOcJr0t1wLBSRf1MH1cSieYabiS9SHxsbsWtmzCI/qEZlz3Bh7cdNsY9WaLSNF1F9FWhpzBCAq1rLr2Fs2+ESeMD8fAa4HvnAZ6EtxkQRXNTAbYqkwzeEoC6wRaNH0Yi4sDaYz3/2hU2Svq1gbm1SlRA4AFoC9r8psKiE1gUsjoksPA6iRjJO1SpWg9TiIusQCRo+l0DyhTraCCxzTmeRn96KRPuMJY/BlPeTmutzRYTWFYXD2KP20Ob+Oaphg1cmmgl1BEUPXDkglq6EgdFzIf6znb7g=
   app: lyric-finder-dev
+  on:
+    branch: main
 
 env:
   CI: false
